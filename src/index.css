@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.bg-image {
+  background-image: url("./assets/images/Background.jpg");
+}
+.bg-image2 {
+  background-image: url("/assets/images/background2.jpeg");
+}
+
+.bg-image3 {
+  background-image: url("/assets/images/background3.jpeg");
+  opacity: 2;
+}
