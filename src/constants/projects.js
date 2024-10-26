@@ -1,4 +1,3 @@
-// import s from "../../public/assets/images"
 import Weather from "/assets/images/Weatherok.png";
 import Lib from "/assets/images/Lib.png";
 import Choco from "/assets/images/Choco.png";

@@ -1,16 +1,10 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./jsconfig.app.json"
-    },
-
-  ],
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",                      // Base directory to resolve non-relative module names
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"],                          // Alias for the src directory
+      "@/assets/*": ["assets/*"],            // Alias for the assets directory
+      // other aliases...
     }
-  },
-  "exclude": ["node_modules"]
+  }
 }

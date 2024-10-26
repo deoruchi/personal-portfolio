@@ -8,7 +8,7 @@
 }
 
 .bg-image {
-  background-image: url("./assets/images/Background.jpg");
+  background-image: url("/assets/images/Background.jpg");
 }
 .bg-image2 {
   background-image: url("/assets/images/background2.jpeg");
