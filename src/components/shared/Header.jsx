@@ -18,7 +18,7 @@ export const Header = () => {
             <a href="#project">Project</a>
           </li>
           <li className="cursor-pointer hover:text-gray-700">
-            <a href="#Work">Work</a>
+            <a href="#work">Work</a>
           </li>
         </ul>
       </nav>

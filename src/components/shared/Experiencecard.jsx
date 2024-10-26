@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, CardTitle } from "../ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import { Calendar } from "lucide-react";
 
@@ -16,13 +16,13 @@ export const Experiencecard = ({
       <CardTitle>{name}</CardTitle>
       {/* Use CardContent for better structure */}
       <CardContent>
-        <div className="flex justify-between items-center space-y-1">
+        <CardDescription className="p-0">
           <div>{role}</div>
           <div className="flex items-center gap-1">
             <Calendar className="w-3" />
             {timeline}
           </div>
-        </div>
+        </CardDescription>
       </CardContent>
       <div className="p-0 text-gray-700">
         <div className="flex items-center gap-1">
