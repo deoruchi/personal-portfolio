@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "https://github.com/deoruchi/personal-portfolio/",
   plugins: [react()],
+  base: "/personal-portfolio/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -12,7 +12,7 @@ export default defineConfig({
   },
   server: {
     cors: {
-      origin: "*", // Allow all origins
+      origin: "*",
     },
   },
 });
