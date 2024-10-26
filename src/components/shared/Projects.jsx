@@ -1,6 +1,4 @@
-import React, { useId } from "react";
-
-// import project_Detail from "../../constants/projects";
+import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import { CommonMarquee } from "./CommonMarquee";
 import { project_Detail } from "../../constants/projects";

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "/assets/images/Image.jpg";
+
 import {
   Card,
   CardContent,
