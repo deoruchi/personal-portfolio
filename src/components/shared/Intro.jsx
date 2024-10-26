@@ -64,7 +64,7 @@ export const Intro = () => {
                 Loves drawing and anime
               </p>
               <p className="font-semibold mt-4 bg-gradient-to-b from-purple-300 to-indigo-300 p-2 rounded-lg text-center">
-                Medium Horros
+                Like Horror Movies and Books
               </p>
             </div>
 
