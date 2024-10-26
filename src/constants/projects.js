@@ -1,9 +1,9 @@
-import Weather from "@/assets/images/Weatherok.png";
-import Lib from "@/assets/images/Lib.png";
-import Choco from "@/assets/images/Choco.png";
-import Future from "@/assets/images/Future.png";
-import CLI from "@/assets/images/CLI.png";
-import Todo from "@/assets/images/Todo.png";
+import Weather from "../imageFolder/images/Weatherok.png";
+import Lib from "../imageFolder/images/Lib.png";
+import Choco from "../imageFolder/images/Choco.png";
+import Future from "../imageFolder/images/Future.png";
+import CLI from "../imageFolder/images/CLI.png";
+import Todo from "../imageFolder/images/Todo.png";
 export const project_Detail = [
   {
     name: "Weather OK",

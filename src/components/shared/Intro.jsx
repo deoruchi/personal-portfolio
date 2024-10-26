@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-import Protfolio_img from "@/assets/images/Profilephoto2.png";
+import Protfolio_img from "../../imageFolder/images/Profilephoto2.png";
 export const Intro = () => {
   return (
     <>

@@ -8,13 +8,13 @@
 }
 
 .bg-image {
-  background-image: url("./assets/images/Background.jpg");
+  background-image: url("./imageFolder/images/Background.jpg");
 }
 .bg-image2 {
-  background-image: url("./assets/images/background2.jpeg");
+  background-image: url("./imageFolder/images/background2.jpeg");
 }
 
 .bg-image3 {
-  background-image: url("./assets/images/background3.jpeg");
+  background-image: url("./imageFolder/images/background3.jpeg");
   opacity: 2;
 }

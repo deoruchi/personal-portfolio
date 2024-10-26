@@ -1,12 +1,12 @@
 import React from "react";
 import { Avatars } from "./Avatars";
 
-import Tailwind from "@/assets/icons/Tailwind.png";
-import Css from "@/assets/icons/Css-3.png";
-import Html from "@/assets/icons/Html.png";
-import JavaScript from "@/assets/icons/Js.png";
-import Node from "@/assets/icons/Node.png";
-import ReactIcon from "@/assets/icons/Library.png";
+import Tailwind from "../../imageFolder/icons/Tailwind.png";
+import Css from "../../imageFolder/icons/Css-3.png";
+import Html from "../../imageFolder/icons/Html.png";
+import JavaScript from "../../imageFolder/icons/Js.png";
+import Node from "../../imageFolder/icons/Node.png";
+import ReactIcon from "../../imageFolder/icons/Library.png";
 
 export const Skills = () => {
   return (
