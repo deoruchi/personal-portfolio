@@ -1,5 +1,5 @@
 import { CommonMarquee } from "./CommonMarquee";
-import { work_experience } from "../../constants/WorkExperience";
+import { work_experience } from "@/constants/WorkExperience.js";
 import { Experiencecard } from "./Experiencecard";
 
 export const WorkExperienc = () => {

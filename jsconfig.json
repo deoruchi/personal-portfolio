@@ -3,8 +3,8 @@
     "baseUrl": "./src",                      // Base directory to resolve non-relative module names
     "paths": {
       "@/*": ["*"],                          // Alias for the src directory
-      "@/assets/*": ["assets/*"],            // Alias for the assets directory
-      // other aliases...
+      
+      
     }
   }
 }

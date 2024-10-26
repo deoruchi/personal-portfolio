@@ -10,7 +10,7 @@ import { Input } from "../ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Card, CardContent, CardTitle } from "../ui/card";
-import { formSchema } from "../../lib/Validation/validation";
+import { formSchema } from "@/lib/Validation/validation.js";
 import { Textarea } from "../ui/textarea";
 
 export const Footer = () => {
