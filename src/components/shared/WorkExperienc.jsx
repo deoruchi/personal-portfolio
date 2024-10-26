@@ -9,7 +9,7 @@ export const WorkExperienc = () => {
         <CommonMarquee text="Work Experience" />
       </div>
       <div className="flex flex-1 gap-2 my-4 flex-col lg:flex-row " id="work">
-        {work_experience?.map((items) => (
+        {work_experience?.map((items, id) => (
           <Experiencecard
             name={items.company_name}
             role={items.role}
@@ -17,6 +17,7 @@ export const WorkExperienc = () => {
             proj_nm={items.project_name}
             resp={items.responsibilities}
             skills={items.skills}
+            key={id}
           />
         ))}
       </div>
