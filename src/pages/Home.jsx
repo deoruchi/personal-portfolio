@@ -1,7 +1,7 @@
 import React from "react";
 import { Intro } from "../components/shared/Intro";
 import { Header } from "../components/shared/Header";
-import { Main } from "../components/shared/main";
+import { Main } from "../components/shared/Main";
 import { WorkExperienc } from "../components/shared/WorkExperienc.jsx";
 import { Footer } from "../components/shared/Footer";
 
