@@ -1,7 +1,9 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Protfolio_img from "../../imageFolder/images/Profilephoto2.png";
+import { useNavigate } from "react-router-dom";
 export const Intro = () => {
+  const nav = useNavigate();
   return (
     <>
       <section
@@ -12,7 +14,6 @@ export const Intro = () => {
           <div className=" font-thin  md:text-[100px] transition-all ease-out   ">
             <div className="animate-bounce">
               <span className="font-semibold text-[50px] md:text-[100px] ">
-                {" "}
                 Hello 👋
               </span>
             </div>
@@ -41,7 +42,18 @@ export const Intro = () => {
               Frontend Developer
             </Button>
           </div>
+          <div className="mt-4 block lg:hidden">
+            <Button
+              variant="outline"
+              onClick={() => {
+                nav("/personal-portfolio/about");
+              }}
+            >
+              More About me ✨
+            </Button>
+          </div>
         </div>
+
         <div className="flex flex-col justify-center items-center ml-10">
           <img
             src={Protfolio_img}
@@ -53,7 +65,7 @@ export const Intro = () => {
               <p className="font-semibold">About</p>
               <p className="text-wrap">
                 A person who loves to create and have fun while making it.
-                Learned and hardworking.
+                Learner and hardworking.
               </p>
               <p>
                 <strong>Personality Type:</strong> INTP 🌱
@@ -68,9 +80,9 @@ export const Intro = () => {
               </p>
             </div>
 
-            <p className="font-semibol p-2 rounded-lg bg-white text-center  animate-float text-slate-800">
+            <p className="font-semibol p-2 rounded-lg bg-lime-200 text-center  animate-float text-slate-800">
               <span className="font-semibold">Status:</span>
-              Improving Sleeping Cycle
+              Improving Sleep Cycle
             </p>
           </div>
         </div>

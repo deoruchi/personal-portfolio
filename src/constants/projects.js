@@ -13,9 +13,8 @@ export const project_Detail = [
     techused: [
       "HTML",
       "CSS",
-      " JavaScript",
-      " CSS Flexbox/Grid",
-      ,
+      "JavaScript",
+      "CSS Flexbox/Grid",
       "Media Queries",
       "Flexbox",
       "OpenWeatherMap API ",
@@ -58,7 +57,7 @@ export const project_Detail = [
     link: "https://github.com/RuchiDeo266/task-tracker-cli",
     detail:
       "Helps in tracking the task by updateing the status, completion , editing and deletion of task.",
-    techused: ["Nodejs", "Javascript", "npm"],
+    techused: ["Nodejs", "Javascript", "npm", "CLI", "JSON"],
     visit: "fork",
 
     image: CLI,

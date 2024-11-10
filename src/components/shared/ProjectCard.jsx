@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Badge } from "../ui/badge";
 import {
   Card,
   CardContent,
@@ -12,10 +13,10 @@ import { MoveRight } from "lucide-react";
 
 export const ProjectCard = ({ name, detail, techused, visit, image }) => {
   let Image_url = image;
-
+  const [more, setMore] = useState(false);
   return (
     <>
-      <Card className="w-[350px] h-fit overflow-auto">
+      <Card className="w-[350px] lg:h-fit overflow-auto">
         <img
           src={Image_url}
           alt={name}
@@ -23,21 +24,35 @@ export const ProjectCard = ({ name, detail, techused, visit, image }) => {
         />
         <CardHeader>
           <CardTitle>{name}</CardTitle>
-          <CardDescription className="">{detail}</CardDescription>
+          <CardDescription
+            className={`${
+              more ? "overflow-y-sccroll h-fit" : " max-h-24  overflow-hidden"
+            } `}
+          >
+            {detail}
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex justify-start gap-2 flex-wrap">
             {techused?.map((items) => (
-              <Button variant="outline" key={items}>
+              <Badge variant="outline" key={items}>
                 {items}
-              </Button>
+              </Badge>
             ))}
           </div>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="flex flex-1 justify-between item-center">
+          <a>
+            <Button
+              variant="outline"
+              className="space-x-4 flex flex-1 items-center justify-center gap-2 lg:w-24"
+            >
+              Code
+            </Button>
+          </a>
           <a href={visit}>
-            <Button className="space-x-4 flex flex-1 items-center justify-center gap-2">
-              Visit <MoveRight />
+            <Button className="space-x-4 flex flex-1 items-center justify-center gap-2 lg:w-24">
+              Visit
             </Button>
           </a>
         </CardFooter>

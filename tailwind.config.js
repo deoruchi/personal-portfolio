@@ -6,6 +6,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundColor: {
+        whiteBlur: "rgba(255, 255, 255, 0.24)",
+        whiteBlur2: "rgba(255, 255, 255, 0.89)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

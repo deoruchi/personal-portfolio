@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../ui/form";
 import { Input } from "../ui/input";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Card, CardContent, CardTitle } from "../ui/card";
+
 import { formSchema } from "@/lib/Validation/validation.js";
 import { Textarea } from "../ui/textarea";
 
 export const Footer = () => {
+  const [loading, setLoading] = useState(false);
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -22,20 +26,40 @@ export const Footer = () => {
       message: "",
     },
   });
-  function onSubmit(values) {
-    if (values === undefined) {
-      toast({
-        title: "No values ",
-        description: "Please Enter Values before Submitting",
+
+  const onSubmit = async (values) => {
+    if (!values || Object.keys(values).length === 0) {
+      alert({
+        title: "No Values",
+        description: "Please enter values before submitting.",
       });
+      return;
     }
 
-    console.log(values);
-    toast({
-      title: "Submitted",
-      description: "Submitted!!",
-    });
-  }
+    setLoading(true);
+    try {
+      // Replace with your async request (e.g., API call)
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      delay;
+
+      console.log(values);
+      alert({
+        title: "Submitted",
+        description: "Your submission was successful!",
+      });
+    } catch (error) {
+      console.error(error);
+      alert({
+        title: "Submission Failed",
+        description: "An error occurred. Please try again.",
+        status: "error",
+      });
+    } finally {
+      setLoading(false);
+      form.reset();
+    }
+  };
+
   return (
     <section className="text-white p-6 ml-4 mr-4 rounded-lg border-2 border-white flex flex-row flex-wrap justify-center gap-4 md:justify-between">
       <div>
@@ -45,7 +69,7 @@ export const Footer = () => {
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className=" mt-4 flex flex-col items-center gap-2 md:flex-row "
+                className="mt-4 flex flex-col items-center gap-2 md:flex-row"
               >
                 <FormField
                   control={form.control}
@@ -88,7 +112,9 @@ export const Footer = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit">Submit</Button>
+                <Button type="submit" disabled={loading}>
+                  {loading ? "Submitting..." : "Submit"}
+                </Button>
               </form>
             </Form>
           </CardContent>
@@ -99,7 +125,7 @@ export const Footer = () => {
       </div>
       <div className="self-end text-center md:text-left font-bold">
         Follow me on:
-        <div className="text-white flex flex-row gap-4 justify-center  ">
+        <div className="text-white flex flex-row gap-4 justify-center">
           <a href="https://www.instagram.com/rufflessia_remi/" alt="instalogo">
             <InstagramLogoIcon width={24} height={24} />
           </a>

@@ -18,3 +18,9 @@
   background-image: url("./imageFolder/images/background3.jpeg");
   opacity: 2;
 }
+.bg-gradient {
+  background-image: url("./imageFolder/images/GradientShape-1.png");
+}
+.bg-gradient2 {
+  background-image: url("./imageFolder/images/GradientShape-2.png");
+}

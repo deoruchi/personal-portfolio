@@ -7,7 +7,7 @@ import { Footer } from "../components/shared/Footer";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen bg-black overflow-hidden flex flex-col gap-1 scroll-smooth snap-y snap-mandatory scroll-pt-0.5">
+    <div className="min-h-screen bg-black overflow-hidden flex flex-col gap-1 scroll-smooth snap-y snap-mandatory scroll-pt-0.5 p-4">
       <Header className="snap-always snap-start" />
       <Intro className="snap-always snap-start" />
       <Main className="snap-always snap-start" />

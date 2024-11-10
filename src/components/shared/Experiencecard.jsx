@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
+import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Calendar } from "lucide-react";
 
@@ -15,12 +16,12 @@ export const Experiencecard = ({
     <Card className="w-[100%] lg:w-[500px] p-4 border border-black">
       <CardTitle>{name}</CardTitle>
       {/* Use CardContent for better structure */}
-      <CardContent>
-        <CardDescription className="p-0">
+      <CardContent className="pl-0">
+        <CardDescription className=" flex flex-row justify-between items-center gap-1">
           <div>{role}</div>
-          <div className="flex items-center gap-1">
+          <div className="flex flex-row items-center gap-1">
             <Calendar className="w-3" />
-            {timeline}
+            <p>{timeline}</p>
           </div>
         </CardDescription>
       </CardContent>
@@ -38,15 +39,11 @@ export const Experiencecard = ({
             ))}
           </ul>
         </div>
-        <div className="flex flex-wrap flex-1 items-center gap-2 mx-2">
+        <div className="flex flex-wrap flex-1 items-center gap-2 m-2">
           {skills?.map((items, id) => (
-            <Button
-              variant="outline"
-              className="text-sm text-slate-600 font-semibold w-fit p-1 rounded-lg"
-              key={id}
-            >
+            <Badge variant="outline" key={id}>
               {items}
-            </Button>
+            </Badge>
           ))}
         </div>
       </div>
